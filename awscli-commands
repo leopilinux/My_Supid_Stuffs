@@ -1,2 +1,2 @@
 #for cloudwatch logs, start time is converted to epoch and in milliseconds
-aws logs get-log-events --log-group-name squid --log-stream-name /var/log/squid/access.log/i-09aef74f6ec6bf67b --start-time 1684108893000 --end-time 1684195173000 --start-from-head --limit 10000 --no-paginate --region ap-southeast-2 --output text >> file.txt
+aws logs get-log-events --log-group-name squid --log-stream-name /var/log/squid/access.log/<id> --start-time 1684108893000 --end-time 1684195173000 --start-from-head --limit 10000 --no-paginate --region ap-southeast-2 --output text >> file.txt
